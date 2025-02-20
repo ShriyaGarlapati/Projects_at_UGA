@@ -1,0 +1,13 @@
+prune_ratios:
+  features.0.weight: 0.0   # No pruning for the first layer
+  features.3.weight: 0.8
+  features.7.weight: 0.8
+  features.10.weight: 0.8
+  features.14.weight: 0.8
+  features.17.weight: 0.8
+  features.21.weight: 0.8
+  features.24.weight: 0.8
+  features.28.weight: 0.8
+  features.31.weight: 0.8
+  classifier.weight: 0.0   # No pruning for the last fully connected layer
+  classifier.bias: 0.0

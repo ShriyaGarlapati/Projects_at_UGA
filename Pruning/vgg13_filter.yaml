@@ -1,0 +1,13 @@
+prune_ratios:
+  features.0.weight: 0.0  # No pruning for the first layer
+  features.3.weight: 0.5  # Keep 40% pruning for the third layer
+  features.7.weight: 0.7  # Increase pruning to 50% for the seventh layer
+  features.10.weight: 0.9  # Increase pruning to 50% for the tenth layer
+  features.14.weight: 0.9  # Increase pruning to 50% for the fourteenth layer
+  features.17.weight: 0.9  # Increase pruning to 50% for the seventeenth layer
+  features.21.weight: 0.8  # Increase pruning to 50% for the twenty-first layer
+  features.24.weight: 0.8  # Increase pruning to 50% for the twenty-fourth layer
+  features.28.weight: 0.8  # Increase pruning to 50% for the twenty-eighth layer
+  features.31.weight: 0.8  # Increase pruning to 50% for the thirty-first layer
+  classifier.weight: 0.0  # No pruning for the last fully connected layer
+  classifier.bias: 0.0    # No pruning for the classifier bias
