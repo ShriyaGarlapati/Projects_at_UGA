@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Signup - Cafe Management{% endblock %}
+
+{% block content %}
+<div id="auth-container">
+    <h1>Signup</h1>
+    {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
+    <form method="post" id="signup-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username-input">Username</label>
+            <input type="text" id="username-input" name="username" placeholder="Choose a username" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input" name="email" placeholder="Enter your email" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password-input">Password</label>
+            <input type="password" id="password-input" name="password" placeholder="Create a password" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="mobile-input">Mobile Number</label>
+            <input type="text" id="mobile-input" name="mobile_number" placeholder="Enter your mobile number" required class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Signup" class="btn">
+        </div>
+    </form>
+</div>
+{% endblock %}

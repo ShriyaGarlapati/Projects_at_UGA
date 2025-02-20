@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login - Cafe Management{% endblock %}
+
+{% block content %}
+<div id="login-container">
+    <h1>Login</h1>
+    {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
+    <form method="post" id="login-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username-input">Username</label>
+            <input type="text" id="username-input" name="username" placeholder="Enter your username" required class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password-input">Password</label>
+            <input type="password" id="password-input" name="password" placeholder="Enter your password" required class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Login" class="btn">
+        </div>
+    </form>
+</div>
+{% endblock %}
+

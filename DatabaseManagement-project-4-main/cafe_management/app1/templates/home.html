@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home - Cafe Management{% endblock %}
+
+{% block content %}
+
+{% if error_message %}
+    <p class="error">{{ error_message }}</p>
+{% endif %}
+{% if is_authenticated %}
+    <h2>Menu Items</h2>
+    {% for category, items in menu_categories.items %}
+        <h3>{{ category }}</h3>
+        <div class="menu-grid">
+        {% for menu_item in items %}
+            <div class="menu-item">
+                <h4>{{ menu_item.menu_item_name }}</h4>
+                <img src="{{ menu_item.menu_item_image }}" alt="{{ menu_item.menu_item_name }} Image" class="menu-image">
+                <p class="description">{{ menu_item.description }}</p>
+                <p class="price">Price: ${{ menu_item.price }}</p>
+                <form action="{% url 'add_to_cart' menu_item.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" value="Add to Cart" class="btn-add-to-cart">
+                </form>
+            </div>
+        {% endfor %}
+        </div>
+    {% endfor %}
+{% else %}
+    <p>You need to log in to view the menu.</p>
+{% endif %}
+{% endblock %}

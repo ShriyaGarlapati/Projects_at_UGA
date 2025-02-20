@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84abfbf2-765c-4360-88f5-bec4dda5ae67" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Project1/src/Project1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/cinema.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/movie.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/movieExec.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/movieStar.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/out/production/Project1/project1/KeyType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/out/production/Project1/project1/MovieDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/out/production/Project1/project1/Table$MapType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/out/production/Project1/project1/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/project1/MovieDB2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/src/project1/MovieDB2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/project1/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project1/src/project1/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/starsIn.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1/src/studio.dbf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="testing" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2bYeQZ8G7Yew70eSYyHb4BOHBll" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MovieDB.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.preview.features.used": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/bhumikagupta/Database-Management-project-1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="MovieDB" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="project1.MovieDB" />
+      <module name="Database-Management-project-1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Project1/src/project1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84abfbf2-765c-4360-88f5-bec4dda5ae67" name="Changes" comment="" />
+      <created>1706396424678</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706396424678</updated>
+      <workItem from="1706396426106" duration="817000" />
+      <workItem from="1706397251035" duration="11491000" />
+      <workItem from="1706585617978" duration="676000" />
+      <workItem from="1706586343474" duration="5639000" />
+      <workItem from="1706596703935" duration="340000" />
+      <workItem from="1706745872518" duration="5000" />
+      <workItem from="1706745887051" duration="393000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Project1/src/project1/MovieDB.java</url>
+          <line>20</line>
+          <properties class="project1.MovieDB" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

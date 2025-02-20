@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        label, p {
+            margin-bottom: 0.5em;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .checkout-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        }
+
+        /* Order Summary and Form Styling */
+        .order-summary, form {
+        width: 90%;
+        max-width: 400px; /* Adjust the width as needed */
+        margin-bottom: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+        .checkout-container {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+        .item {
+            background: #ffffff;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">Cafe Management</a>
+    </header>
+    <h2>Checkout</h2>
+    {% if cart_items %}
+    <div class="checkout-container">
+        <div class="order-summary">
+            <h3>Order Summary:</h3>
+            {% for item in cart_items %}
+                <div class="item">
+                    <p>{{ item.menu_item.menu_item_name }} (Quantity: {{ item.quantity }}) - ${{ item.menu_item.price }}</p>
+                </div>
+            {% endfor %}
+            <p><strong>Total Payment: ${{ total_payment }}</strong></p>
+        </div>
+    </div>
+    {% else %}
+        <p>No items in the cart.</p>
+    {% endif %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="payment_type">Payment Type:</label>
+        <select name="payment_type" id="payment_type">
+            <option value="card">Card</option>
+            <option value="cash">Cash</option>
+        </select>
+        <button type="submit">Pay</button>
+    </form>
+</body>
+</html>
