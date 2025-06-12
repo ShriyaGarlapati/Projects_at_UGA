@@ -21,16 +21,12 @@ Custom CNN with:
 8. Inference time profiling using dummy and real input
 
 **Technologies Used**
+
 PyTorch
-
 Torchvision
-
 Matplotlib – for accuracy plotting
-
 THOP – to compute MACs and parameter counts
-
 OpenCV – for image processing
-
 NumPy
 
 **Project Structure**
