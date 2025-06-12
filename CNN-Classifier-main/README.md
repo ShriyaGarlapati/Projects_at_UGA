@@ -22,10 +22,15 @@ Custom CNN with:
 
 **Technologies Used**
 PyTorch
+
 Torchvision
+
 Matplotlib – for accuracy plotting
+
 THOP – to compute MACs and parameter counts
+
 OpenCV – for image processing
+
 NumPy
 
 **Project Structure**
