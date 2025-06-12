@@ -22,24 +22,23 @@ Custom CNN with:
 
 **Technologies Used**
 
-PyTorch
-Torchvision
-Matplotlib – for accuracy plotting
-THOP – to compute MACs and parameter counts
-OpenCV – for image processing
-NumPy
+1. PyTorch
+2. Torchvision
+3. Matplotlib – for accuracy plotting
+4. THOP – to compute MACs and parameter counts
+5. OpenCV – for image processing
+6. NumPy
 
-**Project Structure**
+**Files**
 
-.
-├── CNNclassify.py             # Main script for training, testing, inference
-├── resnet20_cifar.py          # ResNet-20 definition for CIFAR-10
-├── model/                     # Directory to save trained models
-│   └── cnn_model.pth
-├── HORSE.png                  # Custom input image for testing
-├── CONV_rslt.png              # Output of feature map visualization
-├── accuracy_plot.png          # Accuracy vs Epochs (train/test)
-├── README.md                  # Project documentation
+CNNclassify.py             # Main script for training, testing, inference<br>
+resnet20_cifar.py          # ResNet-20 definition for CIFAR-10<br>
+model/                     # Directory to save trained models<br>
+│   └── cnn_model.pth<br>
+├── HORSE.png                  # Custom input image for testing<br>
+├── CONV_rslt.png              # Output of feature map visualization<br>
+├── accuracy_plot.png          # Accuracy vs Epochs (train/test)<br>
+├── README.md                  # Project documentation<br>
 
 
 **Prerequisites**
