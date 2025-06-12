@@ -37,14 +37,6 @@ import torchvision.transforms as transforms
 from torchvision.datasets import CIFAR10
 from PIL import Image
 
-
-
-
-
-
-
-
-
 class CNN(nn.Module):
     def __init__(self):
         super(CNN, self).__init__()
