@@ -75,22 +75,22 @@ Available Commands<br>
 
 1. train<br>
 
-Trains a custom CNN on CIFAR-10 with three different seeds (189, 173, 200)<br>
-Applies data augmentation (random crop, horizontal flip)<br>
-Saves model to ./model/cnn_model.pth<br>
-Displays a training vs. test accuracy plot<br>
-Command: python CNNclassify.py train<br>
+* Trains a custom CNN on CIFAR-10 with three different seeds (189, 173, 200)<br>
+* Applies data augmentation (random crop, horizontal flip)<br>
+* Saves model to ./model/cnn_model.pth<br>
+* Displays a training vs. test accuracy plot<br>
+* Command: python CNNclassify.py train<br>
 
 2. test <image_path><br>
 
-Loads the trained CNN from ./model/cnn_model.pth<br>
-Predicts class of the input image (resized to 32×32)<br>
-Visualizes first convolutional layer filters<br>
-Saves the feature map as CONV_rslt.png<br>
-Command: python CNNclassify.py test HORSE.png<br>
+* Loads the trained CNN from ./model/cnn_model.pth<br>
+* Predicts class of the input image (resized to 32×32)<br>
+* Visualizes first convolutional layer filters<br>
+* Saves the feature map as CONV_rslt.png<br>
+* Command: python CNNclassify.py test HORSE.png<br>
 
 3. resnet20<br>
 
-Loads and evaluates a pretrained ResNet-20 model on CIFAR-10<br>
-Prints test accuracy<br>
-Command: python CNNclassify.py resnet20<br>
+* Loads and evaluates a pretrained ResNet-20 model on CIFAR-10<br>
+* Prints test accuracy<br>
+* Command: python CNNclassify.py resnet20<br>
