@@ -42,55 +42,55 @@ Custom CNN with:
 
 **Prerequisites**
 
-Install Python 3.11.9 (recommended using pyenv)
-If you already have Python 3.11.9, you can skip this.
+Install Python 3.11.9 (recommended using pyenv)<br>
+If you already have Python 3.11.9, you can skip this.<br>
 
-1. Clone the Repository:
+1. Clone the Repository:<br>
 
-git clone https://github.com/ShriyaGarlapati/Projects_at_UGA/tree/main/CNN-Classifier-main
-cd CNN-Classifier
+git clone https://github.com/ShriyaGarlapati/Projects_at_UGA/tree/main/CNN-Classifier-main<br>
+cd CNN-Classifier<br>
 
-2. macOS Users Only – Fix for lzma module error:
-brew install xz
+2. macOS Users Only – Fix for lzma module error:<br>
+brew install xz<br>
 
-If you still see ModuleNotFoundError: No module named '_lzma', run:
+If you still see ModuleNotFoundError: No module named '_lzma', run:<br>
 
-pyenv uninstall 3.11.9
-export LDFLAGS="-L/opt/homebrew/opt/xz/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/xz/include"
-pyenv install 3.11.9
+pyenv uninstall 3.11.9<br>
+export LDFLAGS="-L/opt/homebrew/opt/xz/lib"<br>
+export CPPFLAGS="-I/opt/homebrew/opt/xz/include"<br>
+pyenv install 3.11.9<br>
 
-3. Install Required Python Packages:
+3. Install Required Python Packages:<br>
 
-pip install torch torchvision opencv-python matplotlib thop numpy sympy networkx jinja2 filelock fsspec
+pip install torch torchvision opencv-python matplotlib thop numpy sympy<br> networkx jinja2 filelock fsspec <br>
 
 
 
 **Usage**
 
-Run the script with:
-python CNNclassify.py <command> [image_path]
+Run the script with:<br>
+python CNNclassify.py <command> [image_path]<br>
 
-Available Commands
+Available Commands<br>
 
-1. train
+1. train<br>
 
-Trains a custom CNN on CIFAR-10 with three different seeds (189, 173, 200)
-Applies data augmentation (random crop, horizontal flip)
-Saves model to ./model/cnn_model.pth
-Displays a training vs. test accuracy plot
-Command: python CNNclassify.py train
+Trains a custom CNN on CIFAR-10 with three different seeds (189, 173, 200)<br>
+Applies data augmentation (random crop, horizontal flip)<br>
+Saves model to ./model/cnn_model.pth<br>
+Displays a training vs. test accuracy plot<br>
+Command: python CNNclassify.py train<br>
 
-2. test <image_path>
+2. test <image_path><br>
 
-Loads the trained CNN from ./model/cnn_model.pth
-Predicts class of the input image (resized to 32×32)
-Visualizes first convolutional layer filters
-Saves the feature map as CONV_rslt.png
-Command: python CNNclassify.py test HORSE.png
+Loads the trained CNN from ./model/cnn_model.pth<br>
+Predicts class of the input image (resized to 32×32)<br>
+Visualizes first convolutional layer filters<br>
+Saves the feature map as CONV_rslt.png<br>
+Command: python CNNclassify.py test HORSE.png<br>
 
-3. resnet20
+3. resnet20<br>
 
-Loads and evaluates a pretrained ResNet-20 model on CIFAR-10
-Prints test accuracy
-Command: python CNNclassify.py resnet20
+Loads and evaluates a pretrained ResNet-20 model on CIFAR-10<br>
+Prints test accuracy<br>
+Command: python CNNclassify.py resnet20<br>
